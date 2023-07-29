@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Ministry</title>
+        <link rel="icon" href="./images/logo-circle.png" type="image/png">
+        <link rel="apple-touch-icon" href="./images/logo-circle.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/32b4ec2234.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+    
+    <script type="text/javascript" language="JavaScript">
+        function toggleSection(sSection) {
+            // borderBottomLeftRadius
+            var oHeader = document.getElementById('o' + sSection + 'Header');
+            
+            var oSection = document.getElementById('o' + sSection + 'Content');
+            var oIndicator = document.getElementById('o' + sSection + 'Ind');
+            if (oSection.style.display != 'block') {
+                oIndicator.innerHTML = '<img src="./images/minus.png" style="width:25px;margin-bottom:-6px" />';
+                // oSection.style.display = 'block';
+                oHeader.style.borderBottomLeftRadius = '0px';
+                oHeader.style.borderBottomRightRadius = '0px';
+                
+                $(oSection).slideDown ('fast', function(){
+                    $([document.documentElement, document.body]).animate({
+                            scrollTop: $(oHeader).offset().top - 20
+                        }, 350);
+                });
+                
+            }
+            else {
+                oIndicator.innerHTML = '<img src="./images/plus.png" style="width:25px;margin-bottom:-6px" />';
+                
+                $(oSection).slideUp ('fast', function () {
+                    oHeader.style.borderBottomLeftRadius = '16px';
+                    oHeader.style.borderBottomRightRadius = '16px';
+                });
+                
+                
+            }
+        }
+    </script>
+    
+    <body style="text-align:center;">
+        
+        
+        
+        <div class="topnav" style="padding-bottom:50px; padding-top:10px;">
+            <a href="./index.html" style="color:white; padding: 0px; padding-left:20px; padding-right:30px;">
+                
+                <div class="auto_image">
+                    &nbsp;
+                </div>
+            </a>
+            
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./support.html" class="active">Support</a>
+            
+        </div>
+        
+        <h1 class="largeTitle2" style="margin-right: 10%; margin-left: 10%;">Ministry App Support</h1>
+        
+        <div class="margin0"></div>
+        
+        <div class="largeMargin">
+            <a href="mailto:peppercornhelp@gmail.com?subject=Peppercorn Support Request" ><button class="navigationlink"> <i class="fa-solid fa-envelope" style="color: #017BFF;"></i>&nbsp Contact Support <div><i class="fa-solid fa-chevron-right"></i></div></button></a>
+        </div>
+        
+        <div class="margin2"></div>
+        
+        
+        <a name="faqs">
+            <h1 class="heading" style="margin-left:10%; margin-right:10%; font-weight: 500;">Frequently Asked Questions</h1>
+        </a>
+        
+        <div class="margin0"></div>
+        
+        
+        <div style="text-align:left;" class="questions">
+            
+            
+            <div class="header" onClick="toggleSection ('AddList')" id="oAddListHeader">
+                <span id="oAddListInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Add Time
+            </div>
+            <div class="content" id="oAddListContent">
+                <ol>
+                    <li>Go to the "Time" tab.</li>
+                    <li>Tap the "Add Time" button.</li>
+                    <li>Enter the date and time and time.</li>
+                    <li>Tap "Save."</li>
+                </ol>
+            </div>
+            
+            <div class="marginSmall"></div>
+            
+            
+            <div class="header" onClick="toggleSection ('ShareList')" id="oShareListHeader">
+                <span id="oShareListInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Stopwatch
+            </div>
+            <div class="content" id="oShareListContent">
+                <p class="headerText">Start Stopwatch</p>
+                <ol>
+                    <li>Go to the "Time" tab.</li>
+                    <li>Tap the "Stopwatch" button.</li>
+                    <li>Tap "Start Time."</li>
+                </ol>
+                
+                <p class="headerText">Stop Stopwatch</p>
+                <ol>
+                    <li>Go to the "Time" tab.</li>
+                    <li>Tap the "Stopwatch" button.</li>
+                    <li>Tap "Stop Time."</li>
+                    <ul>
+                        <li>To save the time tap "Yes."</li>
+                        <li>To discard the time tap "No/"</li>
+                        <li>To cancel tap "Cancel."</li>
+                    </ul>
+                    
+                </ol>
+            </div>
+            
+            
+            <div class="marginSmall"></div>
+            
+            <div class="header" onClick="toggleSection ('ImportRecipe')" id="oImportRecipeHeader">
+                <span id="oImportRecipeInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Add Call
+            </div>
+            <div class="content" id="oImportRecipeContent">
+                <ol>
+                    <li>Go to the "Calls" tab.</li>
+                    <li>Tap the "Map" button.</li>
+                    <li>Long-press on the location want to add the call. A circle will appear marking the location of the new call.</li>
+                    <li>By default, the call is marked as not-at-home. To update the call status,</li>
+                    <ol>
+                        <li>Tap the call once.</li>
+                        <li>Tap the "Status" option.</li>
+                        <li>Select the new status.</li>
+                    </ol>
+                    <p style="margin-left: -20px;"><span style="color: gray">Note:</span> More information and options can be obtanied by tapping the "Info" button.</p>
+                </ol>
+            </div>
+            
+            <div class="marginSmall"></div>
+            
+            
+            <div class="header" onClick="toggleSection ('PlanMeals')" id="oPlanMealsHeader">
+                <span id="oPlanMealsInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Share List of Not-At-Homes
+            </div>
+            <div class="content" id="oPlanMealsContent">
+                <ul>
+                <li>Go to the "Calls" tab.</li>
+                <li>Tap the "dots" button.</li>
+                <li>Select the "Share Calls" option.</li>
+                <li>Select the types of calls you want to share.</li>
+                <li>By default, the call is marked as not-at-home. To update the call status,</li>
+                <ol>
+                    <li>Tap the call once.</li>
+                    <li>Tap the "Status" option.</li>
+                    <li>Select the new status.</li>
+                </ol>
+                <p style="margin-left: -20px;"><span style="color: gray">Note:</span> More information and options can be obtanied by tapping the "Info" button.</p>
+                <ul>
+            </div>
+            
+            
+            <div class="marginSmall"></div>
+            
+        </div>
+        
+        <div class="margin3"></div>
+        
+        
+        <div class="horizontal-adaptable-small" style="background-color: #2b2b2b; padding-left: 20px; margin-bottom: 0px; margin-left:-10px; margin-right:-10px;">
+            <br>
+            <a class="footerLink" href="./index.html">Home</a>
+            <p class="horizontal-adaptable-divider">|</p>
+            <br>
+            <a class="footerLink" href="./about.html">About</a>
+            <p class="horizontal-adaptable-divider">|</p>
+            <br>
+            <a class="footerLink" href="./support.html">Support</a>
+            <p class="horizontal-adaptable-divider">|</p>
+            <br>
+            <a class="footerLink" href="https://apps.apple.com/us/app/peppercorn-shopping-lists/id6446650536">Download</a>
+            <p class="horizontal-adaptable-divider">|</p>
+            <br>
+            <a class="footerLink" href="mailto:peppercornhelp@gmail.com?subject=Peppercorn Support Request">Contact</a>
+            <p class="horizontal-adaptable-divider">|</p>
+            <br>
+            <a class="footerLink" href="./privacy.html">Privacy Policy</a>
+            <br><br>
+        </div>
+        
+    </body>
+</html>
