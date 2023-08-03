@@ -2,7 +2,7 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
-        <title>Peppercorn</title>
+        <title>Ministry</title>
         <link rel="icon" href="./images/logo-circle.png" type="image/png">
         <link rel="apple-touch-icon" href="./images/logo-circle.png">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -59,12 +59,12 @@
             </a>
             
             <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
             <a href="./support.html" class="active">Support</a>
+            <a href="./privacy.html">Privacy Policy</a>
             
         </div>
         
-        <h1 class="largeTitle2" style="margin-right: 10%; margin-left: 10%;">Peppercorn Support</h1>
+        <h1 class="largeTitle2" style="margin-right: 10%; margin-left: 10%;">Ministry App Support</h1>
         
         <div class="margin0"></div>
         
@@ -86,55 +86,13 @@
             
             
             <div class="header" onClick="toggleSection ('AddList')" id="oAddListHeader">
-                <span id="oAddListInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Add Shopping List
+                <span id="oAddListInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Add Time
             </div>
             <div class="content" id="oAddListContent">
-                <p class="headerText">Add Existing List</p>
                 <ol>
-                    <li>Open Peppercorn.</li>
-                    <li>Go to the "Shopping Lists" tab.</li>
-                    <li>Tap the Plus button.</li>
-                    <li>Choose "Choose from Reminders."</li>
-                    <li>Tap the list you want to add.</li>
-                </ol>
-                
-                <p class="headerText">Create New List</p>
-                <ol>
-                    <li>Open Peppercorn.</li>
-                    <li>Go to the "Shopping Lists" tab.</li>
-                    <li>Tap the Plus button.</li>
-                    <li>Choose "New List."</li>
-                </ol>
-            </div>
-            
-            <div class="marginSmall"></div>
-            
-            
-            <div class="header" onClick="toggleSection ('ShareList')" id="oShareListHeader">
-                <span id="oShareListInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Sharing Lists
-            </div>
-            <div class="content" id="oShareListContent">
-                <ol>
-                    <li>Open the Reminders app.</li>
-                    <li>Tap the list you want to share.</li>
-                    <li>Tap the Share Button.</li>
-                </ol>
-            </div>
-            
-            
-            <div class="marginSmall"></div>
-            
-            <div class="header" onClick="toggleSection ('ImportRecipe')" id="oImportRecipeHeader">
-                <span id="oImportRecipeInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Import Recipe from Web
-            </div>
-            <div class="content" id="oImportRecipeContent">
-                <ol>
-                    <li>Copy the URL of the recipe you want to import.</li>
-                    <li>Open Peppercorn.</li>
-                    <li>Go to the "Recipes" tab.</li>
-                    <li>Tap the Plus button.</li>
-                    <li>Paste the URL in the "Recipe URL" text field.</li>
-                    <li>Tap "Import Recipe."</li>
+                    <li>Go to the "Time" tab.</li>
+                    <li>Tap the "Add Time" button.</li>
+                    <li>Enter the date and time and time.</li>
                     <li>Tap "Save."</li>
                 </ol>
             </div>
@@ -142,19 +100,27 @@
             <div class="marginSmall"></div>
             
             
-            <div class="header" onClick="toggleSection ('PlanMeals')" id="oPlanMealsHeader">
-                <span id="oPlanMealsInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Plan Meals
+            <div class="header" onClick="toggleSection ('ShareList')" id="oShareListHeader">
+                <span id="oShareListInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Stopwatch
             </div>
-            <div class="content" id="oPlanMealsContent">
+            <div class="content" id="oShareListContent">
+                <p class="headerText">Start Stopwatch</p>
                 <ol>
-                    <li>Open Peppercorn.</li>
-                    <li>Go to the "Recipes" tab.</li>
-                    <li>Tap the "Meal Plan" button.</li>
-                    <li>Tap "Edit."</li>
-                    <li>Tap the "Add Meal" button.</li>
-                    
-                    <li>Choose the meals you want to add.</li>
-                    <li>Tap "Done."</li>
+                    <li>Go to the "Time" tab.</li>
+                    <li>Tap the "Stopwatch" button.</li>
+                    <li>Tap "Start Time."</li>
+                </ol>
+                
+                <p class="headerText">Stop Stopwatch</p>
+                <ol>
+                    <li>Go to the "Time" tab.</li>
+                    <li>Tap the "Stopwatch" button.</li>
+                    <li>Tap "Stop Time."</li>
+                    <ul>
+                        <li>To save the time tap "Yes."</li>
+                        <li>To discard the time tap "No/"</li>
+                        <li>To cancel tap "Cancel."</li>
+                    </ul>
                     
                 </ol>
             </div>
@@ -162,41 +128,48 @@
             
             <div class="marginSmall"></div>
             
-            <div class="header" onClick="toggleSection ('Inventory')" id="oInventoryHeader">
-                <span id="oInventoryInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Inventory Item Options
+            <div class="header" onClick="toggleSection ('ImportRecipe')" id="oImportRecipeHeader">
+                <span id="oImportRecipeInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Add Call
             </div>
-            <div class="content" id="oInventoryContent">
-                <p class="headerText">Barcode</p>
+            <div class="content" id="oImportRecipeContent">
+                <ol>
+                    <li>Go to the "Calls" tab.</li>
+                    <li>Tap the "Map" button.</li>
+                    <li>Long-press on the location want to add the call. A circle will appear marking the location of the new call.</li>
+                    <li>By default, the call is marked as not-at-home. To update the call status,</li>
+                    <ol>
+                        <li>Tap the call once.</li>
+                        <li>Tap the "Status" option.</li>
+                        <li>Select the new status.</li>
+                    </ol>
+                    <p style="margin-left: -20px;"><span style="color: gray">Note:</span> More information and options can be obtanied by tapping the "Info" button.</p>
+                </ol>
+            </div>
+            
+            <div class="marginSmall"></div>
+            
+            
+            <div class="header" onClick="toggleSection ('PlanMeals')" id="oPlanMealsHeader">
+                <span id="oPlanMealsInd"><img src="./images/plus.png" style="width:25px;margin-bottom:-6px" /></span>&nbsp Share List of Not-At-Homes
+            </div>
+            <div class="content" id="oPlanMealsContent">
                 <ul>
-                    <li>Tap the "Scan Barcode" button to scan the item's barcode.</li>
-                    <li>You can tap the barcode button in the search bar to scan an item's barcode, making it easy to find it later.</li>
-                    <li>All of the most common barcodes are supported.</li>
-                </ul>
-                <p class="notetext">Note: Turn on the "Reorder" switch to access the following options.</p>
-                
-                <p class="headerText">Reorder Period</p>
+                <li>Go to the "Calls" tab.</li>
+                <li>Tap the "dots" button.</li>
+                <li>Select the "Share Calls" option.</li>
+                <li>Select the types of calls you want to share.</li>
+                <li>By default, the call is marked as not-at-home. To update the call status,</li>
+                <ol>
+                    <li>Tap the call once.</li>
+                    <li>Tap the "Status" option.</li>
+                    <li>Select the new status.</li>
+                </ol>
+                <p style="margin-left: -20px;"><span style="color: gray">Note:</span> More information and options can be obtanied by tapping the "Info" button.</p>
                 <ul>
-                    <li>Set how often you want the item to be automatically added to your list.</li>
-                </ul>
-                
-                <p class="headerText">List</p>
-                <ul>
-                    <li>Choose the list you want the item to be added to when the reorder time elapses.</li>
-                </ul>
-                
-                <p class="headerText">Category</p>
-                <ul>
-                    <li>Choose what category to add the item to in the specified list.</li>
-                </ul>
-                
-                <p class="headerText">Reorder Notification</p>
-                <ul>
-                    <li>Choose whether or not to recieve a notification when the item was automatically added to your list.</li>
-                </ul>
-                
             </div>
             
             
+            <div class="marginSmall"></div>
             
         </div>
         
@@ -206,9 +179,6 @@
         <div class="horizontal-adaptable-small" style="background-color: #2b2b2b; padding-left: 20px; margin-bottom: 0px; margin-left:-10px; margin-right:-10px;">
             <br>
             <a class="footerLink" href="./index.html">Home</a>
-            <p class="horizontal-adaptable-divider">|</p>
-            <br>
-            <a class="footerLink" href="./about.html">About</a>
             <p class="horizontal-adaptable-divider">|</p>
             <br>
             <a class="footerLink" href="./support.html">Support</a>
